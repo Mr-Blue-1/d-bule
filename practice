@@ -1,0 +1,63 @@
+public class Solution2 {
+    int[] record,tem;
+
+    public static void main(String[] args) {
+        Solution2 s=new Solution2();
+        int[] a={1,3,2,4};
+        s.record=a;
+        s.tem=new int[4];
+        for (int i = 0; i < 4; i++) {
+            System.out.println(s.record[i]);
+        }
+        s.quicksort(0,3);
+        for (int i = 0; i < 4; i++) {
+            System.out.println(s.record[i]);
+        }
+
+
+    }
+
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        int m=nums1.length,n=nums2.length;
+        record=new int[m+n];
+        tem=new int[record.length];
+        for(int i=0;i<m;i++){
+            record[i]=nums1[i];
+        }
+        for(int i=0;i<n;i++){
+            record[i]=nums2[i];
+        }
+        quicksort(0,record.length-1);
+        double ans;
+        if((m+n)%2==1){
+            int l=(m+n)/2;
+            ans=record[l];
+        }
+        else{
+            int l1=(m+n)/2,l2=(m+n)/2-1;
+            ans= (record[l1]+record[l2])/2.0;
+        }
+        return ans;
+    }
+    public void quicksort(int l,int r){
+        if(l>=r) return;
+        int m=(l+r)/2;
+        quicksort(l,m);
+        quicksort(m+1,r);
+        int k=l,j=m+1;
+        for(int i=l;i<=r;i++){
+            tem[i]=record[i];
+        }
+        for(int i=l;i<=r;i++){
+            if(k==m+1) record[i]=tem[j++];
+            else if(j==(r+1)||tem[j]>tem[k]) record[i]=tem[k++];
+            else {
+                record[i]=tem[j++];
+            }
+        }
+
+    }
+
+
+
+}
