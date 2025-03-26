@@ -1,0 +1,101 @@
+<mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    
+    <!-- 主标题 -->
+    <mxCell id="title" value="工地安全帽佩戴检测系统硬件组成" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1" vertex="1" parent="1">
+      <mxGeometry x="300" y="20" width="300" height="40" as="geometry" />
+    </mxCell>
+    
+    <!-- 中央服务器 -->
+    <mxCell id="server" value="中央处理服务器" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#4D4D4D;strokeColor=#4D4D4D;rounded=1;fontSize=14;fontColor=#FFFFFF;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+      <mxGeometry x="350" y="100" width="160" height="126" as="geometry" />
+    </mxCell>
+    <mxCell id="server_cpu" value="GPU加速计算单元" style="text;align=left;verticalAlign=top;spacingLeft=4;fillColor=#E6E6E6;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="server">
+      <mxGeometry y="26" width="160" height="25" as="geometry" />
+    </mxCell>
+    <mxCell id="server_storage" value="数据存储单元" style="text;align=left;verticalAlign=top;spacingLeft=4;fillColor=#E6E6E6;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="server">
+      <mxGeometry y="51" width="160" height="25" as="geometry" />
+    </mxCell>
+    <mxCell id="server_network" value="网络通信模块" style="text;align=left;verticalAlign=top;spacingLeft=4;fillColor=#E6E6E6;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="server">
+      <mxGeometry y="76" width="160" height="25" as="geometry" />
+    </mxCell>
+    <mxCell id="server_ai" value="AI推理模块" style="text;align=left;verticalAlign=top;spacingLeft=4;fillColor=#E6E6E6;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="server">
+      <mxGeometry y="101" width="160" height="25" as="geometry" />
+    </mxCell>
+    
+    <!-- 摄像采集设备 -->
+    <mxCell id="camera_group" value="摄像采集设备" style="group" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="150" y="250" width="200" height="120" as="geometry" />
+    </mxCell>
+    <mxCell id="camera_title" value="摄像采集设备" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" vertex="1" parent="camera_group">
+      <mxGeometry y="5" width="200" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="fixed_camera" value="固定监控摄像头" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" vertex="1" parent="camera_group">
+      <mxGeometry x="30" y="30" width="60" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="ptz_camera" value="PTZ摄像头" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" vertex="1" parent="camera_group">
+      <mxGeometry x="110" y="30" width="60" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="drone" value="巡检无人机" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" vertex="1" parent="camera_group">
+      <mxGeometry x="70" y="80" width="60" height="30" as="geometry" />
+    </mxCell>
+    
+    <!-- 边缘计算设备 -->
+    <mxCell id="edge_group" value="边缘计算设备" style="group" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="450" y="250" width="200" height="90" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_title" value="边缘计算设备" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" vertex="1" parent="edge_group">
+      <mxGeometry y="5" width="200" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="jetson" value="Jetson边缘盒子" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=12;" vertex="1" parent="edge_group">
+      <mxGeometry x="20" y="30" width="80" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="ai_box" value="AI计算盒子" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=12;" vertex="1" parent="edge_group">
+      <mxGeometry x="110" y="30" width="80" height="60" as="geometry" />
+    </mxCell>
+    
+    <!-- 报警装置 -->
+    <mxCell id="alarm_group" value="报警装置" style="group" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="150" y="400" width="200" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="alarm_title" value="报警装置" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" vertex="1" parent="alarm_group">
+      <mxGeometry y="5" width="200" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="sound_alarm" value="声光报警器" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;" vertex="1" parent="alarm_group">
+      <mxGeometry x="30" y="30" width="60" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="led_screen" value="LED显示屏" style="shape=display;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" vertex="1" parent="alarm_group">
+      <mxGeometry x="110" y="30" width="60" height="50" as="geometry" />
+    </mxCell>
+    
+    <!-- 网络设备 -->
+    <mxCell id="network_group" value="网络设备" style="group" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="450" y="400" width="200" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="network_title" value="网络设备" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" vertex="1" parent="network_group">
+      <mxGeometry y="5" width="200" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="router" value="工业路由器" style="shape=cylinder2;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=12;" vertex="1" parent="network_group">
+      <mxGeometry x="20" y="30" width="80" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="switch" value="网络交换机" style="shape=cylinder2;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=12;" vertex="1" parent="network_group">
+      <mxGeometry x="110" y="30" width="80" height="50" as="geometry" />
+    </mxCell>
+    
+    <!-- 连接线 -->
+    <mxCell id="conn1" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="server" target="camera_group">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="conn2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="server" target="edge_group">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="conn3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="server" target="alarm_group">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="conn4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="server" target="network_group">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
