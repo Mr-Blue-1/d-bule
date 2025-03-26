@@ -1,0 +1,74 @@
+<mxfile>
+  <diagram name="第 1 页" id="0">
+    <mxGraphModel dx="1426" dy="792" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- 前端模块 -->
+        <mxCell id="frontend" value="前端系统" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="100" width="200" height="260"/>
+        </mxCell>
+        
+        <mxCell id="login" value="注册/登录模块" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="frontend">
+          <mxGeometry y="30" width="200" height="40"/>
+        </mxCell>
+        
+        <mxCell id="query" value="信息查询模块" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="frontend">
+          <mxGeometry y="70" width="200" height="40"/>
+        </mxCell>
+        
+        <mxCell id="detection" value="安全帽佩戴检测模块" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="frontend">
+          <mxGeometry y="110" width="200" height="40"/>
+        </mxCell>
+        
+        <mxCell id="alert" value="违规报警模块" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="frontend">
+          <mxGeometry y="150" width="200" height="40"/>
+        </mxCell>
+        
+        <mxCell id="report" value="报表生成模块" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="frontend">
+          <mxGeometry y="190" width="200" height="40"/>
+        </mxCell>
+        
+        <!-- 后端模块 -->
+        <mxCell id="backend" value="后端系统" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="100" width="200" height="260"/>
+        </mxCell>
+        
+        <mxCell id="user_manage" value="用户信息管理" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="backend">
+          <mxGeometry y="30" width="200" height="40"/>
+        </mxCell>
+        
+        <mxCell id="violation_query" value="违规信息查询" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="backend">
+          <mxGeometry y="70" width="200" height="40"/>
+        </mxCell>
+        
+        <mxCell id="log_query" value="日志查询" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="backend">
+          <mxGeometry y="110" width="200" height="40"/>
+        </mxCell>
+        
+        <mxCell id="data_analysis" value="数据分析" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="backend">
+          <mxGeometry y="150" width="200" height="40"/>
+        </mxCell>
+        
+        <mxCell id="system_config" value="系统配置" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="backend">
+          <mxGeometry y="190" width="200" height="40"/>
+        </mxCell>
+        
+        <!-- 数据库 -->
+        <mxCell id="database" value="数据库" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="350" y="400" width="100" height="80"/>
+        </mxCell>
+        
+        <!-- 连接线 -->
+        <mxCell id="conn1" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="frontend" target="backend">
+          <mxGeometry relative="1"/>
+        </mxCell>
+        
+        <mxCell id="conn2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="backend" target="database">
+          <mxGeometry relative="1"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
