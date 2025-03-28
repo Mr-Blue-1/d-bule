@@ -1,33 +1,33 @@
-<mxfile host="app.diagrams.net" modified="2023-07-18T14:30:00.000Z" agent="Mozilla/5.0" version="21.6.5" type="device">
-  <diagram name="安全帽检测系统数据库ER图" id="75ae7bdc-4c0a-9d2d-7fba-7c8b0a5f9f79">
+<mxfile host="app.diagrams.net">
+  <diagram name="工地安全帽检测系统数据库ER图" id="75ae7bdc-4c0a-9d2d-7fba-7c8b0a5f9f79">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10">
       <root>
         <!-- 基础容器 -->
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
 
-        <!-- 工地表 -->
-        <mxCell id="construction_site" value="&lt;b&gt;construction_site&lt;/b&gt;&lt;br&gt;id: INT PK&lt;br&gt;name: VARCHAR(100)&lt;br&gt;address: VARCHAR(255)&lt;br&gt;manager: VARCHAR(50)&lt;br&gt;contact_phone: VARCHAR(20)" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+        <!-- 工地信息表 -->
+        <mxCell id="construction_site" value="&lt;b&gt;工地信息表&lt;/b&gt;&lt;br&gt;工地ID: INT PK&lt;br&gt;工地名称: VARCHAR(100)&lt;br&gt;工地地址: VARCHAR(255)&lt;br&gt;负责人: VARCHAR(50)&lt;br&gt;联系电话: VARCHAR(20)" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="200" width="180" height="150" as="geometry"/>
         </mxCell>
 
-        <!-- 摄像头表 -->
-        <mxCell id="camera" value="&lt;b&gt;camera&lt;/b&gt;&lt;br&gt;id: INT PK&lt;br&gt;site_id: INT FK&lt;br&gt;location: VARCHAR(100)&lt;br&gt;ip_address: VARCHAR(20)&lt;br&gt;is_active: BOOLEAN" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+        <!-- 摄像头设备表 -->
+        <mxCell id="camera" value="&lt;b&gt;摄像头设备表&lt;/b&gt;&lt;br&gt;摄像头ID: INT PK&lt;br&gt;所属工地ID: INT FK&lt;br&gt;安装位置: VARCHAR(100)&lt;br&gt;IP地址: VARCHAR(20)&lt;br&gt;是否启用: BOOLEAN" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="200" width="180" height="150" as="geometry"/>
         </mxCell>
 
-        <!-- 工人表 -->
-        <mxCell id="worker" value="&lt;b&gt;worker&lt;/b&gt;&lt;br&gt;id: INT PK&lt;br&gt;site_id: INT FK&lt;br&gt;name: VARCHAR(50)&lt;br&gt;job_number: VARCHAR(20)&lt;br&gt;department: VARCHAR(20)" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+        <!-- 工人信息表 -->
+        <mxCell id="worker" value="&lt;b&gt;工人信息表&lt;/b&gt;&lt;br&gt;工人ID: INT PK&lt;br&gt;所属工地ID: INT FK&lt;br&gt;姓名: VARCHAR(50)&lt;br&gt;工号: VARCHAR(20)&lt;br&gt;所属班组: VARCHAR(20)" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="400" width="180" height="150" as="geometry"/>
         </mxCell>
 
-        <!-- 检测记录表 -->
-        <mxCell id="detection_record" value="&lt;b&gt;detection_record&lt;/b&gt;&lt;br&gt;id: INT PK&lt;br&gt;camera_id: INT FK&lt;br&gt;user_id: INT FK&lt;br&gt;detect_time: DATETIME&lt;br&gt;total_people: INT&lt;br&gt;helmet_count: INT&lt;br&gt;no_helmet_count: INT&lt;br&gt;image_path: VARCHAR(255)" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+        <!-- 安全检测记录表 -->
+        <mxCell id="detection_record" value="&lt;b&gt;安全检测记录表&lt;/b&gt;&lt;br&gt;记录ID: INT PK&lt;br&gt;摄像头ID: INT FK&lt;br&gt;操作员ID: INT FK&lt;br&gt;检测时间: DATETIME&lt;br&gt;总人数: INT&lt;br&gt;佩戴人数: INT&lt;br&gt;未佩戴人数: INT&lt;br&gt;图片路径: VARCHAR(255)" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="400" width="180" height="210" as="geometry"/>
         </mxCell>
 
         <!-- 违规记录表 -->
-        <mxCell id="helmet_violation" value="&lt;b&gt;helmet_violation&lt;/b&gt;&lt;br&gt;id: INT PK&lt;br&gt;record_id: INT FK&lt;br&gt;worker_id: INT FK&lt;br&gt;violation_type: ENUM&lt;br&gt;snapshot_path: VARCHAR(255)&lt;br&gt;is_processed: BOOLEAN" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+        <mxCell id="helmet_violation" value="&lt;b&gt;违规记录表&lt;/b&gt;&lt;br&gt;违规ID: INT PK&lt;br&gt;记录ID: INT FK&lt;br&gt;工人ID: INT FK&lt;br&gt;违规类型: ENUM&lt;br&gt;截图路径: VARCHAR(255)&lt;br&gt;是否处理: BOOLEAN" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
           <mxGeometry x="680" y="400" width="180" height="180" as="geometry"/>
         </mxCell>
 
