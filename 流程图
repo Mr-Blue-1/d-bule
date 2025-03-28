@@ -6,36 +6,37 @@
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
 
-        <!-- 流程图元素 -->
+        <!-- 开始节点 -->
         <mxCell id="start" value="开始" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#4DABF7;strokeColor=#228BE6;" vertex="1" parent="1">
           <mxGeometry x="200" y="100" width="80" height="80" as="geometry"/>
         </mxCell>
 
-        <!-- 设备部署 -->
-        <mxCell id="step1" value="<b>1. 设备部署</b><br>• 安装智能摄像头<br>• 配置检测区域" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F5FF;strokeColor=#74C0FC;" vertex="1" parent="1">
+        <!-- 步骤1：设备部署 -->
+        <mxCell id="step1" value="&lt;b&gt;1. 设备部署&lt;/b&gt;&lt;br&gt;• 安装智能摄像头&lt;br&gt;• 配置检测区域" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F5FF;strokeColor=#74C0FC;" vertex="1" parent="1">
           <mxGeometry x="180" y="220" width="120" height="100" as="geometry"/>
         </mxCell>
 
-        <!-- 实时检测 -->
-        <mxCell id="step2" value="<b>2. 实时检测</b><br>• 视频流分析<br>• 安全帽识别<br>• 工人ID匹配" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F5FF;strokeColor=#74C0FC;" vertex="1" parent="1">
+        <!-- 步骤2：实时检测 -->
+        <mxCell id="step2" value="&lt;b&gt;2. 实时检测&lt;/b&gt;&lt;br&gt;• 视频流分析&lt;br&gt;• 安全帽识别&lt;br&gt;• 工人ID匹配" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F5FF;strokeColor=#74C0FC;" vertex="1" parent="1">
           <mxGeometry x="380" y="220" width="120" height="100" as="geometry"/>
         </mxCell>
 
-        <!-- 违规处理 -->
-        <mxCell id="step3" value="<b>3. 违规处理</b><br>• 自动告警<br>• 人工确认<br>• 处理闭环" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F5FF;strokeColor=#74C0FC;" vertex="1" parent="1">
+        <!-- 步骤3：违规处理 -->
+        <mxCell id="step3" value="&lt;b&gt;3. 违规处理&lt;/b&gt;&lt;br&gt;• 自动告警&lt;br&gt;• 人工确认&lt;br&gt;• 处理闭环" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F5FF;strokeColor=#74C0FC;" vertex="1" parent="1">
           <mxGeometry x="580" y="220" width="120" height="100" as="geometry"/>
         </mxCell>
 
-        <!-- 数据统计 -->
-        <mxCell id="step4" value="<b>4. 数据统计</b><br>• 实时看板<br>• 合规率分析<br>• 趋势报表" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F5FF;strokeColor=#74C0FC;" vertex="1" parent="1">
+        <!-- 步骤4：数据统计 -->
+        <mxCell id="step4" value="&lt;b&gt;4. 数据统计&lt;/b&gt;&lt;br&gt;• 实时看板&lt;br&gt;• 合规率分析&lt;br&gt;• 趋势报表" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F5FF;strokeColor=#74C0FC;" vertex="1" parent="1">
           <mxGeometry x="380" y="380" width="120" height="100" as="geometry"/>
         </mxCell>
 
-        <!-- 系统管理 -->
-        <mxCell id="step5" value="<b>5. 系统管理</b><br>• 权限控制<br>• 数据维护<br>• 设备监控" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F5FF;strokeColor=#74C0FC;" vertex="1" parent="1">
+        <!-- 步骤5：系统管理 -->
+        <mxCell id="step5" value="&lt;b&gt;5. 系统管理&lt;/b&gt;&lt;br&gt;• 权限控制&lt;br&gt;• 数据维护&lt;br&gt;• 设备监控" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F5FF;strokeColor=#74C0FC;" vertex="1" parent="1">
           <mxGeometry x="580" y="380" width="120" height="100" as="geometry"/>
         </mxCell>
 
+        <!-- 结束节点 -->
         <mxCell id="end" value="结束" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#40C057;strokeColor=#2B8A3E;" vertex="1" parent="1">
           <mxGeometry x="380" y="520" width="80" height="80" as="geometry"/>
         </mxCell>
@@ -84,7 +85,7 @@
         </mxCell>
 
         <!-- 图例说明 -->
-        <mxCell id="legend" value="<b>流程说明：</b><br>1. 蓝色节点为关键步骤<br>2. 实线箭头表示主流程方向<br>3. 虚线箭头表示数据反馈" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=5;spacingRight=5;overflow=hidden;rotatable=0;points=[];" vertex="1" parent="1">
+        <mxCell id="legend" value="&lt;b&gt;流程说明：&lt;/b&gt;&lt;br&gt;1. 蓝色节点为关键步骤&lt;br&gt;2. 实线箭头表示主流程方向&lt;br&gt;3. 虚线箭头表示数据反馈" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=5;spacingRight=5;overflow=hidden;rotatable=0;points=[];" vertex="1" parent="1">
           <mxGeometry x="600" y="100" width="200" height="60" as="geometry"/>
         </mxCell>
       </root>
