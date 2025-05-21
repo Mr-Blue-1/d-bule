@@ -1,84 +1,68 @@
 <mxfile>
-  <diagram name="技术路线图" id="UYdB9G9J8Jx3Qv7WQd5E">
-    <mxGraphModel dx="1200" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram name="技术路线图" id="75U0jN3XdxgLZxW2s3q6">
+    <mxGraphModel dx="1200" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
       <root>
         <!-- 基础单元格 -->
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
         <!-- 标题 -->
-        <mxCell id="title" value="&lt;b&gt;&lt;font size=&quot;24&quot;&gt;建筑工地安全防护装备智能检测技术路线&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="360" y="20" width="300" height="40" />
+        <mxCell id="title" value="建筑工地安全防护装备智能检测技术路线" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=24;fontStyle=1;spacingTop=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="400" height="40"/>
         </mxCell>
 
         <!-- 第1章 -->
-        <mxCell id="ch1" value="&lt;b&gt;第1章 绪论&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=none;" vertex="1" parent="1">
-          <mxGeometry x="100" y="100" width="150" height="60" />
+        <mxCell id="ch1" value="第1章 绪论" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="100" y="100" width="150" height="60"/>
         </mxCell>
-        <mxCell id="ch1-content" value="• 研究背景与意义&lt;br&gt;• 国内外研究现状&lt;br&gt;• 技术路线与创新点" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="100" y="170" width="150" height="90" />
+        <mxCell id="ch1_content" value="• 研究背景与意义&lt;br&gt;• 国内外研究现状&lt;br&gt;• 技术路线与创新点" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="100" y="170" width="150" height="90"/>
         </mxCell>
 
         <!-- 第2章 -->
-        <mxCell id="ch2" value="&lt;b&gt;第2章 研究基础&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=none;" vertex="1" parent="1">
-          <mxGeometry x="300" y="100" width="150" height="60" />
+        <mxCell id="ch2" value="第2章 研究基础" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="150" height="60"/>
         </mxCell>
-        <mxCell id="ch2-content" value="• 双阶段检测算法&lt;br&gt;• YOLO系列演进&lt;br&gt;• 数据集构建方法" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="300" y="170" width="150" height="90" />
+        <mxCell id="ch2_content" value="• 双阶段检测算法&lt;br&gt;• YOLO系列演进&lt;br&gt;• 数据集构建方法" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="300" y="170" width="150" height="90"/>
         </mxCell>
 
         <!-- 第3章 -->
-        <mxCell id="ch3" value="&lt;b&gt;第3章 算法改进&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=none;" vertex="1" parent="1">
-          <mxGeometry x="500" y="100" width="150" height="60" />
+        <mxCell id="ch3" value="第3章 算法改进" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="500" y="100" width="150" height="60"/>
         </mxCell>
-        <mxCell id="ch3-content" value="• 注意力机制融合&lt;br&gt;• 多尺度特征优化&lt;br&gt;• 消融实验验证" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="500" y="170" width="150" height="90" />
+        <mxCell id="ch3_content" value="• 注意力机制融合&lt;br&gt;• 多尺度特征优化&lt;br&gt;• 消融实验验证" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="500" y="170" width="150" height="90"/>
         </mxCell>
 
         <!-- 第4章 -->
-        <mxCell id="ch4" value="&lt;b&gt;第4章 轻量化改进&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;gradientColor=none;" vertex="1" parent="1">
-          <mxGeometry x="700" y="100" width="150" height="60" />
+        <mxCell id="ch4" value="第4章 轻量化改进" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="700" y="100" width="150" height="60"/>
         </mxCell>
-        <mxCell id="ch4-content" value="• 网络结构压缩&lt;br&gt;• 检测速度优化&lt;br&gt;• 对比实验分析" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="700" y="170" width="150" height="90" />
+        <mxCell id="ch4_content" value="• 网络结构压缩&lt;br&gt;• 检测速度优化&lt;br&gt;• 对比实验分析" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="700" y="170" width="150" height="90"/>
         </mxCell>
 
         <!-- 第5章 -->
-        <mxCell id="ch5" value="&lt;b&gt;第5章 总结展望&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;gradientColor=none;" vertex="1" parent="1">
-          <mxGeometry x="400" y="300" width="150" height="60" />
+        <mxCell id="ch5" value="第5章 总结展望" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="400" y="300" width="150" height="60"/>
         </mxCell>
-        <mxCell id="ch5-content" value="• 研究成果总结&lt;br&gt;• 未来改进方向" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="400" y="370" width="150" height="60" />
+        <mxCell id="ch5_content" value="• 研究成果总结&lt;br&gt;• 未来改进方向" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="400" y="370" width="150" height="60"/>
         </mxCell>
 
         <!-- 连接箭头 -->
-        <mxCell id="a1" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;startArrow=none;" edge="1" parent="1" source="ch1" target="ch2">
-          <mxGeometry relative="1" />
-        </mxCell>
-        <mxCell id="a2" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;startArrow=none;" edge="1" parent="1" source="ch2" target="ch3">
-          <mxGeometry relative="1" />
-        </mxCell>
-        <mxCell id="a3" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;startArrow=none;" edge="1" parent="1" source="ch3" target="ch4">
-          <mxGeometry relative="1" />
-        </mxCell>
-        <mxCell id="a4" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;startArrow=none;" edge="1" parent="1" source="ch4" target="ch5">
-          <mxGeometry relative="1" />
-        </mxCell>
+        <mxCell id="arrow1" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=classic;startArrow=none;" edge="1" parent="1" source="ch1" target="ch2"/>
+        <mxCell id="arrow2" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=classic;startArrow=none;" edge="1" parent="1" source="ch2" target="ch3"/>
+        <mxCell id="arrow3" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=classic;startArrow=none;" edge="1" parent="1" source="ch3" target="ch4"/>
+        <mxCell id="arrow4" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=classic;startArrow=none;" edge="1" parent="1" source="ch4" target="ch5"/>
 
         <!-- 路线标注 -->
-        <mxCell id="tech-path" value="&lt;b&gt;关键技术路线&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="425" y="80" width="100" height="20" />
+        <mxCell id="label1" value="关键技术路线" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="425" y="80" width="100" height="20"/>
         </mxCell>
-        <mxCell id="exp-path" value="&lt;b&gt;实验验证路线&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="425" y="280" width="100" height="20" />
-        </mxCell>
-
-        <!-- 虚线框 -->
-        <mxCell id="frame1" style="shape=rectangle;dashed=1;strokeColor=#666666;fillColor=none;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="70" y="90" width="800" height="180" />
-        </mxCell>
-        <mxCell id="frame2" style="shape=rectangle;dashed=1;strokeColor=#666666;fillColor=none;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="380" y="290" width="190" height="150" />
+        <mxCell id="label2" value="实验验证路线" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="425" y="280" width="100" height="20"/>
         </mxCell>
       </root>
     </mxGraphModel>
